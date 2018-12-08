@@ -1,2 +1,0 @@
-/Secrets
-Secret1.txt
