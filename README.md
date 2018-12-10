@@ -1,4 +1,4 @@
-# Myproyect
+# My_project
 
 This is a practice with bootstrap
 
