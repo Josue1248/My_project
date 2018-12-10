@@ -45,8 +45,9 @@ nav img{
     background-color: #70a1c0;
 }
 
-.img-value{
-    width: 25%;
+#ourTeam-title{
+    text-align: center;
+    padding-top: 1rem 0;
 }
 
 .value{
@@ -69,4 +70,34 @@ nav img{
 
 .element{
     padding: 1rem 0;
+}
+
+.cards{
+    padding: 0 4rem;
+}
+
+.card{
+    height: 100%;
+}
+
+.card-img-top{
+    padding: 1rem;
+}
+
+.card-text{
+    font-size: .675rem;
+    text-align: justify;
+}
+
+.body-title{
+    text-align: center;
+}
+
+.row{
+    margin: 1rem 0 !important;
+}
+
+.companyMission{
+    background-color: #eeeeee;
+    margin-top: 1rem;
 }
