@@ -42,39 +42,52 @@
             </div>
         </div>
         <div>
-
             <div>
                 <p>How can we help you?</br>Contact us to talk about your needs – we’ll listen.</p>
                 <img src="../assets-bootstrap/line.svg" alt="line">
             </div>
-            <div>
-                <form action="">
-                    <input type="text" name="name" id="name">
-                    <input type="number" name="number" id="number">
-                    <input type="email" name="email" id="email">
-                    <input type="text" name="company" id="company">
-                    <input type="text" name="country" id="country"></br>
-                    <label for="interests">Interests</label>
-                    <div id="interests">
-                        <input type="checkbox" name="interests" id="general"><label for="general">General</label>
-                        <input type="checkbox" name="interests" id="lims-demo"><label for="lims-demo">LIMS-demo</label>
-                        <input type="checkbox" name="interests" id="hpc"><label for="hpc">HPC</label></br>
-                        <input type="checkbox" name="interests" id="labOptimize-lims"><label for="labOptimaze-lims">LabOptimize™ LIMS</label>
-                        <input type="checkbox" name="interests" id="softwareDevelopment"><label for="softwareDevelopment">Software Development</label>
-                    </div>
-                    <input type="text" name="message" id="message">
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="row">
+                    <div class="col-5 offset-1">
+                            <form action="">
+                                <div class="row">
+                                    <input class="col-12" type="text" name="name" id="name" placeholder="Name*">
+                                </div>
+                                <div class="row">
+                                    <input class="col-4 offset-1" type="text" name="number" id="number" placeholder="Number">
+                                    <input class="col-4 offset-1" type="email" name="email" id="email" placeholder="Email*">
+                                </div>
+                                <div class="row"></div>
+                                <div class="row">
+                                    <input class="col-4 offset-1" type="text" name="company" id="company" placeholder="Company">
+                                    <input class="col-4 offset-1" type="text" name="country" id="country" placeholder="Country"></br>
+                                </div>
+                                <label for="interests">Interests</label>
+                                <div id="interests" class="col-12 border rounded bg-white">
+                                    <input type="checkbox" name="interests" id="general"><label for="general">General</label>
+                                    <input type="checkbox" name="interests" id="lims-demo"><label for="lims-demo">LIMS-demo</label>
+                                    <input type="checkbox" name="interests" id="hpc"><label for="hpc">HPC</label></br>
+                                    <input type="checkbox" name="interests" id="labOptimize-lims"><label for="labOptimaze-lims">LabOptimize™ LIMS</label>
+                                    <input type="checkbox" name="interests" id="softwareDevelopment"><label for="softwareDevelopment">Software Development</label>
+                                </div>
+                                <input class="row" type="text" name="message" id="message">
+                                <button class="row" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="col-5">
+                            <img src="../assets-bootstrap/logo.png" alt="biosoft logo">
+                            <address>
+                                <div class="row">
+                                    <img src="../assets-bootstrap/company/ubication.svg" class="col-2" alt="ubication">
+                                    <p class="col-6">1825 Gillespie Way, Suite 202</br>El Cajon, CA 92020</p>
+                                </div>
+                                <div class="row">
+                                    <img src="../assets-bootstrap/company/phone.svg" class="col-2" alt="phone">
+                                    <p class="col-6">+1 (619) 793-5095</p>
+                                </div>
+                            </address>
+                        </div>
             </div>
-            <div>
-                <img src="../assets-bootstrap/logo.png" alt="biosoft logo">
-                <address>
-                    <img src="../assets-bootstrap/company/ubication.svg" alt="ubication">
-                    <p>1825 Gillespie Way, Suite 202</br>El Cajon, CA 92020</p>
-                    <img src="../assets-bootstrap/company/phone.svg" alt="phone">
-                    <p>+1 (619) 793-5095</p>
-                </address>
-            </div>
+            
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
