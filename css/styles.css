@@ -101,3 +101,7 @@ nav img{
     background-color: #eeeeee;
     margin-top: 1rem;
 }
+
+.search-btn{
+    margin-left: -.5rem;
+}
