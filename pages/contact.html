@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a href="index.html" class="navbar-brand"><img src="../assets-bootstrap/logo.png" class="rounded" alt="Biosoft logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky">
+                    <a href="../index.html" class="navbar-brand"><img src="../assets-bootstrap/logo.png" class="rounded" alt="Biosoft logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -24,8 +24,8 @@
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Carrers</a>
-                                    <a class="dropdown-item" href="pages/about.html">About Us</a>
-                                    <a class="dropdown-item" href="pages/contact.html">Contact Us</a>
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="contact.html">Contact Us</a>
                                 </div>
                             </li>
                         </ul>
@@ -41,51 +41,77 @@
                 <h1>CONTACT US</h1>
             </div>
         </div>
-        <div>
-            <div>
-                <p>How can we help you?</br>Contact us to talk about your needs – we’ll listen.</p>
-                <img src="../assets-bootstrap/line.svg" alt="line">
+        <div class="container-fluid">
+            <div class="col-lg-6 col-md-10 offset-lg-3 offset-md-1">
+                <p class="text-center">How can we help you?</br>Contact us to talk about your needs – we’ll listen.</p>
+                <img src="../assets-bootstrap/line.svg"  alt="line">
             </div>
             <div class="row">
-                    <div class="col-5 offset-1">
+                <div class="col-lg-5 col-md-10 offset-1 form-group ">
                             <form action="">
                                 <div class="row">
-                                    <input class="col-12" type="text" name="name" id="name" placeholder="Name*">
+                                    <input class="col-12 form-control" type="text" name="name" id="name" placeholder="Name*">
                                 </div>
-                                <div class="row">
-                                    <input class="col-4 offset-1" type="text" name="number" id="number" placeholder="Number">
-                                    <input class="col-4 offset-1" type="email" name="email" id="email" placeholder="Email*">
-                                </div>
-                                <div class="row"></div>
-                                <div class="row">
-                                    <input class="col-4 offset-1" type="text" name="company" id="company" placeholder="Company">
-                                    <input class="col-4 offset-1" type="text" name="country" id="country" placeholder="Country"></br>
+                                <div class="form-texts">
+                                    <div class="row">
+                                        <input class="col-5 form-control" type="text" name="number" id="number" placeholder="Number">
+                                        <input class="col-5 offset-1 form-control" type="email" name="email" id="email" placeholder="Email*">
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <input class="col-5 form-control" type="text" name="company" id="company" placeholder="Company">
+                                                <input class="col-5 offset-1 form-control" type="text" name="country" id="country" placeholder="Country"></br>
+                                    </div>
                                 </div>
                                 <label for="interests">Interests</label>
                                 <div id="interests" class="col-12 border rounded bg-white">
-                                    <input type="checkbox" name="interests" id="general"><label for="general">General</label>
-                                    <input type="checkbox" name="interests" id="lims-demo"><label for="lims-demo">LIMS-demo</label>
-                                    <input type="checkbox" name="interests" id="hpc"><label for="hpc">HPC</label></br>
-                                    <input type="checkbox" name="interests" id="labOptimize-lims"><label for="labOptimaze-lims">LabOptimize™ LIMS</label>
-                                    <input type="checkbox" name="interests" id="softwareDevelopment"><label for="softwareDevelopment">Software Development</label>
+                                    <div class="row">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="interests" id="general">
+                                            <label for="general">General</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="interests" id="lims-demo">
+                                            <label for="lims-demo">LIMS-demo</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="interests" id="hpc">
+                                            <label for="hpc">HPC</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="interests" id="labOptimize-lims">
+                                            <label for="labOptimaze-lims">LabOptimize™ LIMS</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="interests" id="softwareDevelopment">
+                                            <label for="softwareDevelopment">Software Development</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <input class="row" type="text" name="message" id="message">
-                                <button class="row" type="submit">Send Message</button>
+                                <div class="form-group">
+                                    <textarea class="row form-control" name="message" id="message" rows="5" placeholder="Message*"></textarea>
+                                    <button class="offset-5 btn btn-outline-secondary" type="submit">Send Message</button>
+                                </div>
                             </form>
+                </div>
+                <div class="col-lg-4 col-md-10">
+                    <img src="../assets-bootstrap/logo.png" alt="biosoft logo">
+                    <address>
+                        <div class="row">
+                            <img src="../assets-bootstrap/company/ubication.svg" class="col-lg-2 col-md-3" alt="ubication">
+                            <div class="col-lg-10">
+                                <div class="row"></div>
+                                <p>1825 Gillespie Way, Suite 202</br>El Cajon, CA 92020</p>
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <img src="../assets-bootstrap/logo.png" alt="biosoft logo">
-                            <address>
-                                <div class="row">
-                                    <img src="../assets-bootstrap/company/ubication.svg" class="col-2" alt="ubication">
-                                    <p class="col-6">1825 Gillespie Way, Suite 202</br>El Cajon, CA 92020</p>
-                                </div>
-                                <div class="row">
-                                    <img src="../assets-bootstrap/company/phone.svg" class="col-2" alt="phone">
-                                    <p class="col-6">+1 (619) 793-5095</p>
-                                </div>
-                            </address>
+                        <div class="row">
+                            <img src="../assets-bootstrap/company/phone.svg" class="col-lg-2 col-md-3" alt="phone">
+                            <p class="col-lg-10 col-md-8">+1 (619) 793-5095</p>
                         </div>
+                    </address>
+                </div>
             </div>
             
         </div>
